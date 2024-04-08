@@ -29,10 +29,15 @@ JOBS = [
   },
 ]
 
-@app.route('/')
+@app.route('/home')
 def hello_arc():
   return render_template('home.html',
                          jobs=JOBS,
+                         company_name='Arc')
+
+@app.route('/application')
+def application():
+  return render_template('application.html',
                          company_name='Arc')
 
 @app.route('/api/jobs')
