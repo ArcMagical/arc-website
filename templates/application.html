@@ -12,6 +12,29 @@
         object-fit: cover;
         margin-bottom: 16px;
       }
+      label {
+        display: block;
+        font:
+          1rem 'Fira Sans',
+          sans-serif;
+      }
+      input,
+      label {
+        margin-left: 16px;
+        margin-top: 8px;
+      }
+      #education {
+        width: 80%;
+        height: 360px;
+        object-fit: cover;
+        margin-bottom: 16px;  
+      }
+      #work_experience{
+        width: 80%;
+        height: 360px;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
     </style>
   </head>
   <body>
@@ -22,27 +45,36 @@
       <a class="btn btn-outline-dark" style="margin-left: 16px" target="_blank" 
        href="/home">← All Jobs</a>
       <p class="lead" style="margin-left: 16px; margin-top: 16px">
-       Data Scientist, Location: Moscow, Russia
+       Data Scientist<br> 
+       Moscow, Russia
       </p>
       <h3 class="text-left mt-2 mb-4" style="margin-left: 16px">Responsibilities</h3>
        <p class="lead" style="margin-left: 16px">
         1) Collection and analysis of information on clients in the database 
         (GreenPlum/Hadoop);
+         <br>
         2) Development and validation of classical machine learning models (mainly boosting, 
         clustering);
+         <br>
         3) Work with business customers (for example, monthly calculation of potential 
-        clients 
-        according to the model);
+        clients according to the model);
+         <br>
         4) AB testing of the model in the pilot (if necessary);
+         <br>
         5) Support of model output to PROM (if necessary);
        </p>
       <h3 class="text-left mt-2 mb-4" style="margin-left: 16px">Requirements</h3>
        <p class="lead" style="margin-left: 16px">
         1) Confident knowledge of Python for working with data;
-        2) Knowledge of the main Python libraries for working with data: pandas, numpy, 
+         <br>
+        2) Knowledge of the main Python libraries for working with data: pandas, numpy,
+         <br>
         sklearn, scipy, xgboost / lightgbm / catboost, matplotlib;
+         <br>
         3) Work experience as a data scientist or data analyst;
+         <br>
         4) Confident command of SQL;
+         <br>
         5) Experience working with Payspark, Hadoop, Hive as an advantage;
        </p>
       <h3 class="text-left mt-2 mb-4" style="margin-left: 16px">Salary</h3>
@@ -50,9 +82,30 @@
          RUB 680,000 after the probation period
        </p>
     </div>
-    <div>
-      <h2 class="text-center mt-2 mb-4">Application Form</h2>
-    </div>
+    <form>
+      <div>
+        <h2 class="text-center mt-2 mb-4">Application Form</h2>
+        <label class="lead" for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="1" maxlength="20" 
+        size="20"/>
+      
+        <label class="lead" for="email">Email:</label>
+        <input type="text" id="email" name="email" required minlength="1" maxlength="20" 
+        size="20"/>
+      
+        <label class="lead" for="linkedin">LinkedIn:</label>
+        <input type="text" id="linkedin" name="linkedin" required minlength="1" 
+        maxlength="20" size="20"/>
+      
+        <label class="lead" for="education">Education:</label>
+        <input type="text" id="education" name="education" required minlength="1" 
+        maxlength="200" size="20"/>
+      
+        <label class="lead" for="work_experience">Work Experience:</label>
+        <input type="text" id="work_experience" name="work_experience" required 
+        minlength="1" maxlength="200" size="20"/>
+      </div>
+    </form>
     {% include 'footer.html' %}
   </body>
 </html>

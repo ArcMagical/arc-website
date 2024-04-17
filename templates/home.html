@@ -11,33 +11,34 @@
         height: 360px;
         object-fit: cover;
         margin-bottom: 16px;
-      }
     </style>
   </head>
   <body>
     {% include 'nav.html' %}
     <img class="img-fluid" id='banner' src=https://d9139924-b2ba-4789-a71e-ecf492458839-00-30wq75gvds6i1.sisko.replit.dev/static/banner.jpg height="320">
-    <div id="container">
+   <div id="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-       <div class="row" style="margin-bottom:16px">
-          <div class="col-md-6">
+    <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
         <p class="lead" style="margin-left: 16px">
-         Arc is a product IT company (fictional). The site was created as a learning 
-         project. I have written some text here to fill the space: Lorem ipsum dolor sit amet 
-         consectetur adipisicing elit. Nam delectus eaque cum. Consequatur sunt, non suscipit 
-         voluptate eaque voluptates iusto esse. Sint voluptates facilis veniam ipsa quam 
-         deleniti minima fugit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam 
-         delectus eaque cum. Consequatur sunt, non suscipvoluptate eaque voluptates iusto 
-         esse. Sint voluptates facilis veniam ipsa quam deleniti minima fugit.Lorem ipsum 
-         dolor sit amet consectetur adipisicing elit. Nam delectus eaque cum. Consequatur 
-         sunt, non suscipit voluptate eaque voluptates iusto esse. Sint voluptates facilis 
-         veniam ipsa quam deleniti minima fugit.
+          Arc is a product IT company (fictional). The site was created as a learning 
+          project.<br> 
+          I have written some text here to fill the space: Lorem ipsum dolor sit amet 
+          consectetur adipisicing elit. Nam delectus eaque cum. Consequatur sunt, non 
+          suscipit 
+          voluptate eaque voluptates iusto esse. Sint voluptates facilis veniam ipsa quam 
+          deleniti minima fugit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam 
+          delectus eaque cum. Consequatur sunt, non suscipvoluptate eaque voluptates iusto 
+          esse. Sint voluptates facilis veniam ipsa quam deleniti minima fugit.Lorem ipsum 
+          dolor sit amet consectetur adipisicing elit. Nam delectus eaque cum. Consequatur 
+          sunt, non suscipit voluptate eaque voluptates iusto esse. Sint voluptates facilis 
+          veniam ipsa quam deleniti minima fugit.
         </p>
-         <div class="d-none d-md-block col-md-6">
-         <img src="/static/people.jpg" style="height:320px;border-radius:4px;margin-left: 
-         16px">
-      </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/people.jpg" style="height:320px;border-radius:4px;margin-left: 
+        16px" >
     </div>
+  </div>
         <h2 class="text-center">Open Positions</h2>
         <div style="margin-left: 16px">
           {% for job in jobs %}
