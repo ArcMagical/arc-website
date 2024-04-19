@@ -18,8 +18,7 @@
           1rem 'Fira Sans',
           sans-serif;
       }
-      input,
-      label {
+      input,label {
         margin-left: 16px;
         margin-top: 8px;
       }
@@ -27,13 +26,16 @@
         width: 80%;
         height: 360px;
         object-fit: cover;
-        margin-bottom: 16px;  
+        margin-bottom: 16px;
       }
       #work_experience{
         width: 80%;
         height: 360px;
         object-fit: cover;
         margin-bottom: 16px;
+      }
+      #submit{
+        width: 7%;
       }
     </style>
   </head>
@@ -86,24 +88,32 @@
       <div>
         <h2 class="text-center mt-2 mb-4">Application Form</h2>
         <label class="lead" for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="1" maxlength="20" 
-        size="20"/>
+        <input type="text" id="name" name="name" required minlength="1" maxlength="50" 
+        size="30"/>
       
         <label class="lead" for="email">Email:</label>
-        <input type="text" id="email" name="email" required minlength="1" maxlength="20" 
-        size="20"/>
+        <input type="text" id="email" name="email" required minlength="1" maxlength="50" 
+        size="30"/>
       
         <label class="lead" for="linkedin">LinkedIn:</label>
         <input type="text" id="linkedin" name="linkedin" required minlength="1" 
-        maxlength="20" size="20"/>
+        maxlength="50" size="30"/>
       
         <label class="lead" for="education">Education:</label>
         <input type="text" id="education" name="education" required minlength="1" 
         maxlength="200" size="20"/>
       
         <label class="lead" for="work_experience">Work Experience:</label>
-        <input type="text" id="work_experience" name="work_experience" required 
+        <input type="text"  id="work_experience" name="work_experience" required 
         minlength="1" maxlength="200" size="20"/>
+        <p class="lead" style="margin-left: 16px">
+          Resume
+        </p>
+        <button type="button" id="upload" class="btn btn-outline-dark" style="margin-left: 
+        16px;">Upload</button>
+        <br>
+        <button type="button" id="submit" class="btn btn-outline-dark" style="margin-left: 
+        16px; margin-top: 16px;">Submit</button>
       </div>
     </form>
     {% include 'footer.html' %}
