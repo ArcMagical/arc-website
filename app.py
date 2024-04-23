@@ -40,6 +40,11 @@ def application():
   return render_template('application.html',
                          company_name='Arc')
 
+@app.route('/finalpage')
+def finalpage():
+  return render_template('finalpage.html',
+                         company_name='Arc')
+
 @app.route('/api/jobs')
 def list_jobs():
   return jsonify()
