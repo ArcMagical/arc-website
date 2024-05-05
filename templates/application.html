@@ -38,7 +38,7 @@
   </head>
   <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id='banner' src=https://d9139924-b2ba-4789-a71e-ecf492458839-00-30wq75gvds6i1.sisko.replit.dev/static/banner.jpg height="320">
+    <img class="img-fluid" id='banner' src=/static/banner.jpg height="320">
     <div id="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
       <a class="btn btn-outline-dark" style="margin-left: 16px" target="_blank" 
@@ -97,12 +97,12 @@
         maxlength="50" size="30"/>
       
         <label class="lead" for="education">Education:</label>
-        <input type="text" id="education" name="education" required minlength="1" 
-        maxlength="200" size="20"/>
+        <textarea type="text" id="education" name="education" required minlength="1" 
+        maxlength="200" size="20" style="margin-left: 16px;"></textarea>
       
         <label class="lead" for="work_experience">Work Experience:</label>
-        <input type="text"  id="work_experience" name="work_experience" required 
-        minlength="1" maxlength="200" size="20"/>
+        <textarea type="text"  id="work_experience" name="work_experience" required 
+        minlength="1" maxlength="200" size="20" style="margin-left: 16px;"></textarea>
         <p class="lead" style="margin-left: 16px">
           Resume
         </p>
